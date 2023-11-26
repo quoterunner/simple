@@ -120,6 +120,12 @@ function keypressEvent(event) {
     key = "&nbsp;";
   }
 
+  if (currentLetter.innerHTML == "…") {
+    if (key == ".") {
+      key = "…";
+    }
+  }
+
   if (key == currentLetter.innerHTML) {
     currentLetter.style.color = "green";
     currentLetter.style.borderLeft = "";
