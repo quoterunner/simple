@@ -144,7 +144,7 @@ function keypressEvent(event) {
       console.info("WPM: " + wpm);
 
 
-      document.getElementById("info").textContent = "WPM: " + wpm + " WPM";
+      document.getElementById("info").textContent = "WPM: " + wpm + " WPM" +
       " WPM; Accuracy: " + accuracy + "%; Raw WPM: " + rawWpm;
 
       firstLetter = true;
