@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuoteRunner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>QuoteRunner</h1>
+        <a onclick="getQuote()">Get new quote</a> |
+        <a id="small" onclick="getQuote(0, 50, 'small')">Small</a> |
+        <a id="medium" onclick="getQuote(51, 100, 'medium')">Medium</a> |
+        <a id="large" onclick="getQuote(101, 150, 'large')">Large</a> |
+        <a id="save-your-soul" onclick="getQuote(151, 200, 'save-your-soul')">
+          Save your soul
+        </a>
+        <p id="info"></p>
+      </div>
+    </header>
+    <div id="container">
+      <div id="quote-container">
+        <div id="quote"><h1>Loading</h1></div>
+      </div>
+      <p id="author"></p>
+    </div>
+
+    <script src="https://beans-are-gross.github.io/error.js/error.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://beans-are-gross.github.io/error.js/error.css"
+    />
+    <div id="error-js"></div>
+
+    <div id="local-error-trigger"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
