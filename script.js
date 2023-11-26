@@ -1,7 +1,3 @@
-function onlineCheck(){
-  
-}
-
 function displayError(icon, text) {
   document.getElementById("local-error-trigger").innerHTML =
     '<div id="local-error-container"> <div id="local-error"> <span class="material-symbols-rounded" style="font-size: 50px;"> ' +
@@ -148,8 +144,8 @@ function keypressEvent(event) {
       console.info("WPM: " + wpm);
 
 
-      document.getElementById("info").textContent =
-        "Raw WPM: " + rawWpm + " WPM; Accuracy: " + accuracy + "%; WPM: " + wpm + " WPM";
+      document.getElementById("info").textContent = "WPM: " + wpm + " WPM";
+      " WPM; Accuracy: " + accuracy + "%; Raw WPM: " + rawWpm;
 
       firstLetter = true;
       currentLetterKeypress = 0;
